@@ -25,7 +25,7 @@ const BackgroundContainer = () => {
         `https://api.pexels.com/v1/search/?page=1&per_page=80&orientation=${orientation}&query=${query}`,
         {
           headers: {
-            Authorization: import.meta.VITE_PEXEL_BG_FETCH,
+            Authorization: import.meta.env.VITE_PEXEL_BG_FETCH,
           },
         }
       )
